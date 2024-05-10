@@ -409,3 +409,50 @@ services .services-box p{
    margin-bottom: 30px;
    
 }
+/* ... (Your existing styles) ... */
+
+/* Responsive Adjustments */
+
+@media (max-width: 1068px) {
+   /* Adjust layout for larger tablets and small laptops */
+   .website-wrapper {
+       max-width: 90%; /* Slightly reduce container width */
+   }
+   .services {
+       grid-template-columns: repeat(2, 1fr); /* 2 columns */
+   }
+}
+
+@media (max-width: 768px) {
+   /* Adjust for tablets and smaller screens */
+   /* ... (Your existing menu adjustments) ... */
+
+   .services {
+       grid-template-columns: 1fr; /* Single column layout */
+   }
+
+   .home .banner, 
+   .Zim-banner, 
+   .egypt-banner {
+       padding: 5% 5%; /* Reduce padding for better content fit */
+       min-height: 80vh; /* Adjust banner height */
+   }
+
+   .text-wrapper h1 {
+       font-size: calc(32px + 1.5vw); /* Smaller headline */
+   }
+}
+
+@media (max-width: 568px) {
+   /* Adjust for mobile phones */
+   .home .banner, 
+   .Zim-banner, 
+   .egypt-banner {
+       padding: 5% 5%; /* Further reduce padding */
+       min-height: 70vh; /* Further adjust banner height */
+   }
+
+   .text-wrapper h1 {
+       font-size: calc(28px + 1.5vw); /* Even smaller headline */
+   }
+}
